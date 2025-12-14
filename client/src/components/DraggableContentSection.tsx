@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { DragDropContext, Droppable, Draggable, DropResult } from "react-beautiful-dnd";
+import { DragDropContext, Droppable, Draggable, DropResult } from "@hello-pangea/dnd";
 import ContentCard from "@/components/ContentCard";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, GripVertical } from "lucide-react";
