@@ -2,7 +2,7 @@
 
 **The Agentic IDE Web Platform** - A modern, feature-rich web portal for managing content from GitHub, GitBook, and Notion, powered by AI agents and built with Next.js 15.
 
-![BLinkOS Logo](./client/public/bl1nk-logo.png)
+![BLinkOS Logo](./client/public/assets/logos/blinko-logo.png)
 
 ## Overview
 
