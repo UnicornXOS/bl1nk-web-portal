@@ -1,0 +1,22 @@
+CREATE TABLE `agents` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`name` varchar(255) NOT NULL,
+	`version` varchar(50) NOT NULL DEFAULT '1.0.0',
+	`description` text,
+	`language` enum('js','ts','python','uv','json','yaml') NOT NULL DEFAULT 'ts',
+	`tools` text,
+	`endpoint` varchar(255) NOT NULL,
+	`dependencies` text,
+	`autoLoad` int NOT NULL DEFAULT 0,
+	`author` varchar(255),
+	`authorUrl` text,
+	`repositoryUrl` text,
+	`documentationUrl` text,
+	`tags` text,
+	`isPublic` int NOT NULL DEFAULT 1,
+	`downloadCount` int NOT NULL DEFAULT 0,
+	`rating` int NOT NULL DEFAULT 0,
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,
+	CONSTRAINT `agents_id` PRIMARY KEY(`id`)
+);
